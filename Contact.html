@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mohammad Tahir Khan">
+    <title>Fazex Games | Contact</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header>
+
+        <nav class="navbar">
+            <div class="logo">
+                <figure>
+                    <img src="Assets\logo.png" alt="Fazex Games" width="140">
+                </figure>
+            </div>
+            <ul class="nav_menu">
+                <li>
+                    <a href="index.html" id="home">Home</a>
+                </li>
+                <li>
+                    <a href="founder.html" id="founder">Founder</a>
+                </li>
+                <li>
+                    <a href="Game.html" id="game">Game</a>
+                </li>
+                <li>
+                    <a href="News.html" id="news">News</a>
+                </li>
+                <li>
+                    <a href="Accessibility.html" id="Accessibility">Accessibility</a>
+                </li>
+                <li class="pagenow">
+                    <a href="Contact.html" id="contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="box">
+            <div class="heading">
+                <h1>Contact us</h1>
+            </div>
+            <div class="content">
+                <div class="row">
+                    <div id="address" class="column_2">
+                        <h2 id="address_text">Address:</h2>
+                        <p>St. georges close, Sheffield, United Kingdom, S3 7HD</p>
+                    </div>
+                    <div id="contact_area" class="column_2">
+                        <h3>Send us an email:</h3>
+                        <form class="form" name="myform" action="https://www.dcs.shef.ac.uk/cgi-intranet/public/FormMail.php" method="POST">
+                            <input type="hidden" name="recipients" value="mtkhan1@sheffield.ac.uk">
+                            <p>
+                                <label for="from">Your Name</label>
+                                <input type="text" name="from" id="from" placeholder="NAME">
+                            </p>
+                            <p>
+                                <label for="Get_email">Your Email</label>
+                                <input type="email" name="Email" id="Get_email" placeholder="EMAIL" required>
+                            </p>
+                            <p>
+                                <label for="Get_subject">Subject</label>
+                                <input type="text" name="Subject" id="Get_subject" placeholder="Subject" required>
+                            </p>
+                            <p>
+                                <textarea name="message" cols="30" rows="10" placeholder="Please type the message here..." required></TExtarea>
+                            </p>
+                            <p>
+                                <input type="submit" name="submit" id="submit" value="Submit">
+                                <input type="reset" id="reset">
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="copyright">© Mohammad Tahir Khan, 2021</p>
+        <p>Please note: This is a fictitious website and all the information written is completely fabricated.</p>
+    </footer>
+</body>
+
+</html>

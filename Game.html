@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mohammad Tahir Khan">
+    <title>Fazex Games | Game</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <figure>
+                    <img src="Assets\logo.png" alt="Fazex Games" width="140">
+                </figure>
+            </div>
+            <ul class="nav_menu">
+                <li>
+                    <a href="index.html" id="home">Home</a>
+                </li>
+                <li>
+                    <a href="founder.html" id="founder">Founder</a>
+                </li>
+                <li class="pagenow">
+                    <a href="Game.html" id="game">Game</a>
+                </li>
+                <li>
+                    <a href="News.html" id="news">News</a>
+                </li>
+                <li>
+                    <a href="Accessibility.html" id="Accessibility">Accessibility</a>
+                </li>
+                <li>
+                    <a href="Contact.html" id="contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="heading">
+            <h1>Try one of our games for free:</h1>
+        </div>
+        <div id="rules">
+            <h2 id="rules_subheading">Rules:</h2>
+            <p class="rule">Type your name and click submit.</p>
+            <p class="rule">Choose the correct image.</p>
+        </div>
+        <h1> Enter Your Name? </h1>
+        <input type="text" id="usrname" placeholder="Enter Name Here: ">
+        <input id="chk " type="checkbox" checked>
+        <button id="submit" onclick="javascript:username()">Submit now</button>
+        <p id="demo"></p>
+
+
+        <script>
+            function username() {
+                localStorage.clear();
+                sessionStorage.clear();
+                var user = document.getElementById("usrname").value;
+                localStorage.user = user;
+                document.getElementById("demo").innerHTML = "Welcome " + user;
+            }
+        </script>
+        <div>
+            <canvas id="Canvas" width="320" height="440" style="border:2px solid #000000;"></canvas>
+
+            <div id="start">
+                <div id="btn">
+                    <input type="button" onclick="window.location.reload();" id="play_again" value="Play Again?">
+                </div>
+            </div>
+
+
+            <script src="game.js"></script>
+    </main>
+
+    <footer>
+        <p>© Mohammad Tahir Khan, 2021</p>
+        <p id="footer_note">Please note: This is a fictitious website and all the information written is completely fabricated.</p>
+    </footer>
+</body>
+
+</html>

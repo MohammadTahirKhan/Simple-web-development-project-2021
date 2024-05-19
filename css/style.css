@@ -1,0 +1,425 @@
+html {
+    font-size: 100%;
+    line-height: 1.5rem;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.box {
+    Width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+    max-width: 100%;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+
+/** header */
+
+header {
+    border-bottom: black 2px solid;
+    border-top: black 2px solid;
+}
+
+header .navbar {
+    align-items: center;
+    line-height: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 0;
+    background-color: rgb(255, 255, 255);
+}
+
+header .nav_menu {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+header .nav_menu li {
+    flex: 1 0 50%;
+    text-align: center;
+}
+
+header .nav_menu a {
+    font-size: 15px;
+    font-weight: bold;
+    display: block;
+    color: black;
+    text-decoration: none;
+    letter-spacing: 0.2rem;
+    padding: 0.8rem;
+    transition: all ease-in-out 0.5s;
+    background-color: turquoise;
+    margin: 1px 1px 1px 1px;
+}
+
+header .logo {
+    margin: 0 auto;
+}
+
+header .nav_menu a:hover {
+    color: rgb(61, 202, 245);
+    font-weight: bolder;
+    transform: scale(1, 1);
+}
+
+header .pagenow a {
+    color: brown;
+}
+
+@media (min-width: 600px) {
+    header .navbar {
+        line-height: 1.5rem;
+    }
+    header .nav_menu {
+        width: 100%;
+    }
+    header .navbar li {
+        flex: 1 0 10%;
+    }
+}
+
+@media (min-width: 900px) {
+    header .navbar {
+        justify-content: space-between;
+        padding: 1rem 0;
+        margin: 0 auto 0 auto;
+    }
+    header .nav_menu {
+        width: auto;
+        padding: 0 10px 0 0;
+    }
+    header .logo {
+        margin: 0 0 0 0.3rem;
+    }
+}
+
+
+/** main*/
+
+main {
+    margin-top: 0;
+    border-top: black 1px solid;
+    background-color: rgb(186, 253, 231);
+    text-align: center;
+    min-height: 400px;
+    border-bottom: black 2px solid;
+    border-right: black 2px solid;
+    border-left: black 2px solid;
+}
+
+
+/**home*/
+
+main .homeimg {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 60px;
+    padding-bottom: 10px;
+    border-bottom: black 2px solid;
+}
+
+main .heading {
+    color: rgb(161, 32, 15);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin-top: 40px;
+    font-size: 13px;
+    margin-bottom: 20px;
+    margin-bottom: 30px;
+}
+
+main .content {
+    font-size: 20px;
+    color: rgb(0, 66, 0);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main #introduction {
+    background-color: rgb(212, 255, 237);
+    margin-bottom: 50px;
+    border-bottom: black 2px solid;
+    border-top: black 2px solid;
+}
+
+main #intro_list {
+    font-size: 25px;
+}
+
+main #intro_list_points {
+    background-color: rgb(143, 224, 216);
+    padding: 0;
+}
+
+
+/* founders ***/
+
+main .column {
+    margin-top: 50px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-bottom: 5%;
+    border-top: black 2px solid;
+    border-bottom: black 2px solid;
+    background-color: rgb(231, 228, 228);
+}
+
+main .founders_text {
+    background-color: rgb(156, 156, 156);
+}
+
+main .founders {
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    margin: 0;
+    padding: 0;
+}
+
+main .founders_name {
+    font-size: 25px;
+    color: rgb(3, 40, 77);
+    margin: 0;
+    padding: 0;
+}
+
+
+/*news **/
+
+main .News_item {
+    font-size: 20px;
+    color: rgb(3, 40, 77);
+}
+
+main article {
+    margin: 20px 0;
+    text-align: left;
+    background-color: rgb(212, 255, 237);
+    border-top: 1px solid rgb(20, 20, 20);
+}
+
+main article figure img {
+    max-width: inherit;
+    margin-left: 17.2%;
+}
+
+
+/* game **/
+
+main #rules {
+    margin: 60px 20px 60px 20px;
+    background-color: rgb(212, 255, 237);
+    color: darkgreen;
+    font-size: 17px;
+}
+
+main #rules_subheading {
+    margin-top: 10px;
+    color: darkslategray;
+}
+
+main #btn {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+
+/* contact **/
+
+main .column_2 {
+    margin-top: 50px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-bottom: 5%;
+    border-top: black 2px solid;
+    border-bottom: black 2px solid;
+    background-color: rgb(231, 228, 228);
+}
+
+main #address {
+    background-color: whitesmoke;
+    margin-bottom: 50px;
+}
+
+main #address_text {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+main #contact_area {
+    width: 100%;
+    background-color: darkslategray;
+    color: white;
+    margin-bottom: 50px;
+}
+
+main #submit,
+#reset,
+#play_again,
+#usrname,
+#chk {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+main #submit:hover,
+#reset:hover,
+#play_again:hover {
+    color: rgb(61, 202, 245);
+    font-weight: bolder;
+    transform: scale(1, 1);
+}
+
+@media (min-width: 600px) {
+    main .heading {
+        font-size: 15px;
+    }
+    main .content {
+        font-size: 22px;
+    }
+    main #intro_list {
+        font-size: 28px;
+    }
+    main #intro_list_points {
+        font-size: 20px;
+    }
+    main .home_sub_content {
+        font-size: 26px;
+    }
+    main .founders_box {
+        width: auto;
+    }
+    main .founders {
+        font-size: 28px;
+        font-weight: bold;
+    }
+    main .founders_name {
+        font-size: 26px;
+        color: rgb(3, 40, 77);
+    }
+    main article figure {
+        width: 50%;
+        float: right;
+        margin: 3em 0 0.5em 4%;
+    }
+    main article figure img {
+        margin-left: 25%;
+    }
+    ;
+    main #rules {
+        margin: 60px 60px 60px 60px;
+        font-size: 30px;
+    }
+    main #rules_subheading {
+        font-size: 30px;
+    }
+    main .rule {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 900px) {
+    main .heading {
+        font-size: 20px;
+    }
+    main .content {
+        font-size: 25px;
+    }
+    main #intro_list {
+        font-size: 30px;
+    }
+    main #intro_list_points {
+        font-size: 24px;
+    }
+    main .column {
+        display: flex;
+        justify-content: space-between;
+    }
+    main .row {
+        display: flex;
+    }
+    main .column_2 {
+        justify-content: space-between;
+    }
+    main #address {
+        text-align: left;
+        margin-right: 60px;
+        max-width: 140px;
+    }
+    main .founders {
+        font-size: 28px;
+        font-weight: bold;
+    }
+    main .founders_name {
+        font-size: 30px;
+        color: rgb(3, 40, 77);
+    }
+    main article figure {
+        width: 40%;
+        float: right;
+        margin: 2em 0 0.5em 4%;
+    }
+    main #rules {
+        margin: 60px 120px 60px 120px;
+    }
+}
+
+
+/**footer*/
+
+footer {
+    margin-top: 12px;
+    padding: 12px;
+    text-align: center;
+    font-size: 12px;
+}
+
+footer #footer_note {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+@media (min-width: 600px) {
+    footer {
+        margin-top: 15px;
+        padding: 12px;
+        font-size: 12px;
+    }
+    footer #footer_note {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 900px) {
+    footer {
+        margin-top: 15px;
+        padding: 15px;
+        font-size: 15px;
+    }
+    footer #footer_note {
+        font-size: 15px;
+    }
+}
